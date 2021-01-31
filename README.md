@@ -200,9 +200,20 @@ Thus, we considered this hypothesis that it is not validated and moved to the se
 
 We tought of two kind of plugin. The first one is a naive approach of computing routing fee by taking the fee rate the default amount of 0.000001 sat. Unfortunately we were unable to implement correctly the second plugin, But I will explain the algorithm that we wanted to implement. 
 
-* First plugin: You can finf the python file named listpeers_modification.py in the above.
+* First plugin: You can find the python file named listpeers_modification.py in the above.
 
-* Second plugin:
+* Second plugin: As I said we still haven't got the implementation right but the algorithm is as follow:
+
+1. First extract all the peers from the `listpeers` command.
+2. For each peer extract all the channels id and save them seperately.
+3. For each channel id; Go to the [this](https://1ml.com/) website and paste the id.
+4. In the new page find the base fee and fee rate; Report them back.
+5. Now under each channel in the listpeers add two components: 
+
+```
+"base_fee":
+"fee_rate":
+```
 
 
 
