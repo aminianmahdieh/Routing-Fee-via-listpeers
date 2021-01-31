@@ -198,7 +198,7 @@ Thus, we considered this hypothesis that it is not validated and moved to the se
 
 2. Implementing Plugins: 
 
-We tought of two kind of plugin. The first one is a naive approach of computing routing fee by taking the fee rate the default amount of 0.000001 sat. Unfortunately we were unable to implement correctly the second plugin, But I will explain the algorithm that we wanted to implement. 
+We thought of two kind of plugin. The first one is a naive approach of computing routing fee by taking the fee rate the default amount of 0.000001 sat. Unfortunately we were unable to implement correctly the second plugin, But its algorithm will be explained. 
 
 * First plugin: You can find the python file named listpeers_modification.py in the above.
 
