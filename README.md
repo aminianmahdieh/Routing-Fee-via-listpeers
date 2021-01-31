@@ -1,3 +1,8 @@
+# Routing-Fee-via-listpeers
+
+ ** Authors: Mahdieh AMINIAN SHAHROKHABADI, Wael MUHIEDDINE**
+ 
+ 
 # What is the issue?
 
 A transaction starts from the sender and go to a gateway node through a non-advertised channel and then it goes to a bridge node through a bridge channel. It can do the last part multiple times till it reaches the gateway channel of the recipient that is directly connected to the recipient with a non-advertised channel.   
@@ -214,6 +219,30 @@ We thought of two kind of plugin. The first one is a naive approach of computing
 "base_fee":
 "fee_rate":
 ```
+
+We sketch a naive flowchart of this idea in the following:
+
+![14](https://user-images.githubusercontent.com/72521500/106400300-c9f46b80-641d-11eb-82a6-94f657d18dbc.JPG)
+
+## References
+<a id="1">[1]</a> 
+Ligthning Repository on github;
+[Ligthning Repository] (https://github.com/ElementsProject/lightning)
+
+<a id="2">[2]</a>
+Lightning 101: Lightning Network Fees,
+[Medium website](https://medium.com/suredbits/lightning-101-lightning-network-fees-86abbbc17024)
+
+<a id="3">[3]</a>
+The Lightning Network (Part 2) – Routing Fee Economics
+[Bitmex website](https://blog.bitmex.com/the-lightning-network-part-2-routing-fee-economics/#:~:text=In%20Lightning%20there%20are%20two,fee%20and%20a%20fee%20rate.&text=This%20is%20expressed%20in%20thousandths,is%201%20satoshi%20per%20transaction.&text=This%20is%20expressed%20in%20millionths%20of%20a%20Satoshi%20transferred.)
+
+<a id="4">[4]</a>
+Plugins for c-lightning
+[Plugins](https://github.com/lightningd/plugins)
+
+
+
 
 
 
