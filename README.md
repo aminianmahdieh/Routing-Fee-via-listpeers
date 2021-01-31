@@ -1,6 +1,6 @@
 # Routing-Fee-via-listpeers
 
- ** Authors: Mahdieh AMINIAN SHAHROKHABADI, Wael MUHIEDDINE**
+ * Authors: Mahdieh AMINIAN SHAHROKHABADI, Wael MUHIEDDINE *
  
  
 # What is the issue?
