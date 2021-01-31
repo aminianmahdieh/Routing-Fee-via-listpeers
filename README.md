@@ -1,9 +1,9 @@
 # Routing-Fee-via-listpeers
 
- * Authors: Mahdieh AMINIAN SHAHROKHABADI, Wael MUHIEDDINE *
+ **Authors: Mahdieh AMINIAN SHAHROKHABADI, Wael MUHIEDDINE**
  
  
-# What is the issue?
+## What is the issue?
 
 A transaction starts from the sender and go to a gateway node through a non-advertised channel and then it goes to a bridge node through a bridge channel. It can do the last part multiple times till it reaches the gateway channel of the recipient that is directly connected to the recipient with a non-advertised channel.   
 
@@ -13,7 +13,7 @@ Thus, the opened issue in the below link on the clightning repository is willing
 
 So, in this repositority we wish to address the problem of [listpeers function](https://github.com/ElementsProject/lightning/issues/3683). 
 
-# Theoretical understanding
+## Theoretical understanding
 
 First let us simply explain how does routing payments work. Imagine a node B in an A-B-C serial connection. The channels are set in a way that B has inbound capacity from A and outgoing capacity to C. If A wants to pay C there will be 1 hop in the route which is B. Therefore, A sends the satoshis to B (the routing node) which will pay to C.
 
@@ -35,7 +35,7 @@ But it's challenging due to the fact that there are huge amount of channels whic
 
 Well here we are getting a little ahead of ourselve. First please let us explain what steps we took to set uo the field in order to solve the afromentioned problem.\
 
-# Setup Steps
+## Setup Steps
 
 In our assignment, we are working on displaying the feerate of each peer in our listpeers Clightning command. To do that we need to have a Clightning node. Clightning connects to Bitcoin Core in its configuration, so before working with Clightning we need a working bitcoind node.  
 
@@ -144,7 +144,7 @@ $ lightning-cli getinfo
 
 Now that we have both bitcoin and ligthning set up, we must connect to the network.
 
-# Connecting to Network: 
+## Connecting to Network: 
 
 After having a running clightning node and connected to the Bitcoin Daemon, we need our clightning node to have funds and connected to a list of peers. 
 
@@ -181,7 +181,7 @@ In the following you see the outcome of `listpeers` , `listchannels` and `listno
 
 Now let's see what are the solutions to the afromentioned issue.
 
-# What are the solutions?
+## What are the solutions?
 
 As we already mentioned the main purpose of this assignment is to add to the clightning ‘listpeers’ command the capability to display the routing fee of each peer in the list. So, after being connected to a list of peers we hypothesize two solutions for it. 
 
